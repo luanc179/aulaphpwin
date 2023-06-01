@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HelloWorldController extends Controller
 {
-    public function index()
+    public function __invoke()
     {
         $hello = 'Hello World!';
         return view('hello_world.index',compact('hello'));
